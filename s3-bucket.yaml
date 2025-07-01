@@ -1,0 +1,17 @@
+#CloudFormarionTemplaeVersion
+#Description
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Cloudformation template for S3 Bucket' #decs of what template does
+Resources: #defines resources that will be created by stack
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: 'yousif-s3-bucket-yaml' #no caps
+
+
+
+
+
+#TO CREATE STACK: aws cloudformation create-stack --stack-name my-s3-bucket-stack --template-body file://s3-bucket.yaml
+#TO SEE WHATS HAPPENING: aws cloudformation describe-stacks --stack-name my-s3-bucket-stack
